@@ -1,0 +1,18 @@
+      <div class="container">
+        <div class="div">
+          <% @flats.each do |flat| %>
+          <div class="col-3 mb-3 px-3 w-100">
+            <%= link_to flat_path(flat) do %>
+            <div class="div d-flex">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" style="center" id="pokename"> <%= flat.name %></li>
+                <li class="list-group-item"> <strong>Adress:</strong> <%= flat.adress %> </li>
+                <li class="list-group-item"> Price: <%= flat.price %> </li>
+                <li class="list-group-item"> Rooms: <%= flat.rooms %></li>
+              </ul>
+            <% end %>
+            </div>
+          <% end %>
+          </div>
+      </div>
+      </div>
