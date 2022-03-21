@@ -1,0 +1,6 @@
+<%= @flat.name %>
+<% if @flat.photo.attached? %>
+  <%= cl_image_tag flat.photo.key, height: 300, class: "img-card-top" %>
+<% else%>
+  <%= "METTRE UNE IMAGE" %>
+<% end%>

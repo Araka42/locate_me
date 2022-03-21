@@ -1,0 +1,10 @@
+<div id="form_new">
+  <%= simple_form_for(@flat) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :adress%>
+    <%= f.input :rooms %>
+    <%= f.input :price %>
+    <%= f.input :photo, as: :file %>
+    <%= f.submit "Add my pokemon !", class: "btn-ghost" %>
+  <% end %>
+</div>
